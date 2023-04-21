@@ -1,0 +1,93 @@
+/* reset estilo */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* estilo global */
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	background-color: #f7f7f7;
+}
+
+a {
+	color: #0077c0;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+/* estilo header */
+header {
+	background-color: #0077c0;
+	padding: 1em;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li {
+	margin-left: 1em;
+}
+
+nav a {
+	color: #fff;
+}
+
+h1, h2 {
+	color: #fff;
+	margin-bottom: 0.5em;
+}
+
+/* estilo seccion principal */
+main {-ms-flex-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+section {
+	margin-bottom: 2em;
+}
+
+section h2 {
+	margin-bottom: 0.5em;
+}
+
+ul li {
+	margin-bottom: 1em;
+}
+
+ul li img {
+	max-width: 100%;
+	border: 2px solid #0077c0;
+	border-radius: 5px;
+}
+
+ul li h3 {
+	margin-bottom: 0.5em;
+}
+
+/* estilo footer */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+footer p {
+	margin-bottom: 0;
+}

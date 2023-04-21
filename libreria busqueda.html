@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="principal.html">Pagina principal</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <h1>Buscar cursos</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="buscar">Buscar:</label>
+            <input type="text" id="buscar" name="buscar" placeholder="Busca tu cursos...">
+
+            <label for="Categoria">Categoria:</label>
+            <select id="Categoria" name="Categoria">
+                <option value="">Todas las Categorias</option>
+                <option value="Matematicas">Matematicas</option>
+                <option value="Ciencias">Ciencias</option>
+                <option value="Lengua">Lengua</option>
+                <option value="Historia">Historia</option>
+            </select>
+
+            <label for="niveles">Level:</label>
+            <select id="niveles" name="niveles">
+                <option value="">Todos los niveles</option>
+                <option value="Principiantes">Principiantes</option>
+                <option value="Intermedios">Intermedios</option>
+                <option value="Avanzados">Avanzados</option>
+            </select>
+
+            <button type="submit">Buscar</button>
+        </form>
+
+        <h2>Resultados de Busqueda</h2>
+
+        <ul>
+            <li><a href="cursos.html">Negocios</a></li>
+            <li><a href="cursos.html">Tecnologia</a></li>
+            <li><a href="cursos.html">Arte</a></li>
+            <li><a href="cursos.html">Musica</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de aprendizaje en linea. Todos derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

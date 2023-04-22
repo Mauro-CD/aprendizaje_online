@@ -46,9 +46,15 @@ nav a {
 	color: #fff;
 }
 
-h1, h2 {
+h1 {
 	color: #fff;
 	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+h2 {
+	color: #005f9a;
+	margin-bottom: 0.5em;
+	font-weight: bold;
 }
 
 /* estilo seccion principal */
@@ -90,4 +96,8 @@ footer {
 
 footer p {
 	margin-bottom: 0;
+}
+
+footer:before { 
+	content: "© 2023 Plataforma de aprendizaje en linea. Todos derechos reservados." ; 
 }

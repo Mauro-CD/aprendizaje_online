@@ -6,23 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/principal.css">
-    <link rel="stylesheet" href="pages/cursos.html">
-    <link rel="stylesheet" href="pages/registro.html">
+   
     <script src="js/index.js" type="module"></script>
+    <script src="js/menu.js" type="module"></script>
     <script src="js/funciones.js"></script>
     <title>Aprendizaje</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Pagina principal</a></li>
-                <li><a href="pages/cursos.html">Cursos</a></li>
-                <li><a href="pages/Forum">Foro</a></li>
-                <li><a href="pages/registro.html">Registrate</a></li>
-            </ul>
-        </nav>
+        <menu-ao id="menu-ao"></menu-ao>
         <h1>Pagina de aprendizaje en linea</h1>
         <p>Inscribete en diferentes cursos desde la comodidad de tu casa.</p>
         <form action="cursos.html" method="get">
@@ -40,7 +33,7 @@
                 </cursos-lista>
             </ul>
         </section>
-
+        <nav width="100%" height="100%" src="pages/cursos.html" scrolling="no" frameborder="no" ></nav>
         <section>
             <h2>Categorias</h2>
             <ul>
@@ -50,6 +43,7 @@
                 <li><a href="cursos.html">Musica</a></li>
             </ul>
         </section>
+
     </main>
     <footer>
         <!-- <p>&copy; 2023 Plataforma de aprendizaje en linea. Todos derechos reservados.</p> -->

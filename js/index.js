@@ -1,8 +1,7 @@
 import {cursos} from './listados-de-cursos.js';
 
 
-let tableBody = document.getElementById('cursos-lista');
-
+let listado = document.getElementById('cursos-lista');
 
 for (let i = 0; i < cursos.length; i++) {
     let visita = cursos[i].Visita
@@ -13,8 +12,6 @@ for (let i = 0; i < cursos.length; i++) {
         let Descripcion = `<p>${cursos[i].Descripcion}</p>`;
         //let boton = `<p type="button" onclick="cambiar('${cursos[i].Descripcion}')"><img src="${cursos[i].Imagen}"></p>`
         let af = `</a>`;
-        tableBody.innerHTML += `<li>${ a +  Curso + Imagen + Descripcion + af}</li>`;
+        listado.innerHTML += `<li>${ a +  Curso + Imagen + Descripcion + af}</li>`;
     } 
 };
-
-

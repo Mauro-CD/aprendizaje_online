@@ -31,7 +31,6 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 1em;
 }
 
 nav ul {
@@ -39,7 +38,9 @@ nav ul {
 }
 
 nav li {
-	margin-left: 1em;
+	/* margin-left: 1em; */
+	display: block;
+	padding: 10px;
 }
 
 nav a {
@@ -105,4 +106,8 @@ footer:before {
 img {    
 	height: 100px;
     width: 200px;
+}
+
+nav ul li:hover {
+	background: #005991;
 }

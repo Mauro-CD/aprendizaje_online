@@ -16,9 +16,9 @@ function loadCourse(cursos) {
         let visitas = cursos[i].views
         if (visitas > 2) {
             let a = `<a href="#">`
-            let name = `<h3>${cursos[i].name}</h3>`;
-            let image = `<p type="button" onclick="cambiar('${cursos[i].description}')"><img src="${cursos[i].image}"></p>`;
-            let description = `<p>${cursos[i].description}</p>`;
+            let name = `<h3 id=name >${cursos[i].name}</h3>`;
+            let image = `<p id=image type="button" onclick="cambiar('${cursos[i].description}')"><img src="${cursos[i].image}"></p>`;
+            let description = `<p id=description>${cursos[i].description}</p>`;
             //let boton = `<p type="button" onclick="cambiar('${cursos[i].Descripcion}')"><img src="${cursos[i].Imagen}"></p>`
             let af = `</a>`;
             listado.innerHTML += `<li>${ a +  name + image + description + af}</li>`;

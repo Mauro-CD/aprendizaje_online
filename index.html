@@ -13,22 +13,20 @@
     <title>Aprendizaje</title>
 </head>
 
-<body>
+<body >
     <header>
         <menu-ao id="menu-ao"></menu-ao>
         <h1>Pagina de aprendizaje en linea</h1>
         <p>Inscribete en diferentes cursos desde la comodidad de tu casa.</p>
-        <form action="cursos.html" method="get">
-            <label for="Buscar">Buscar:</label>
-            <input type="text" id="buscar" name="buscar" placeholder="buscar cursos...">
-            <input type="submit" value="Ir">
-        </form>
+        <label for="Buscar" >Buscar:</label>
+        <input type="text" id="buscar" name="buscar" placeholder="buscar cursos..." >
+        <button  onclick="search()">Buscar </button>
     </header>
 
     <main>
         <section>
             <h2>Cursos destacados</h2>
-            <ul>
+            <ul id="prueba">
                 <cursos-lista id="cursos-lista">
                 </cursos-lista>
             </ul>

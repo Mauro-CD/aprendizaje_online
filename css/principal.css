@@ -31,7 +31,6 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 1em;
 }
 
 nav ul {
@@ -39,7 +38,9 @@ nav ul {
 }
 
 nav li {
-	margin-left: 1em;
+	/* margin-left: 1em; */
+	display: block;
+	padding: 10px;
 }
 
 nav a {
@@ -102,6 +103,10 @@ footer {
 	color: #fff;
 	padding: 1em;
 	text-align: center;
+	bottom: 0;
+    position: fixed;
+    font-size: 12px;
+    width: 100%;
 }
 
 footer p {
@@ -115,7 +120,7 @@ footer:before {
 img {    
 	height: 100px;
     width: 200px;
-}
+} HEAD
 cursos-lista{display: flex;
 align-items: center;
 }
@@ -326,4 +331,13 @@ ol, li {
   right: -1rem;
 }
 
+nav ul li:hover {
+	background: #005991;
+}
+
+
+  label {
+	display: block;
+	margin-bottom: 5px;
+  }
 

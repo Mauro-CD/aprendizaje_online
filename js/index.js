@@ -1,7 +1,7 @@
 let listado = document.getElementById('cursos-lista');
 
 //fetch('http://127.0.0.1:5500/cursos.json', {
-fetch('/json/cursos.json', {
+fetch('./json/cursos.json', {
     method: 'GET',
     headers: {
         'Accept': 'application/json',

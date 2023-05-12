@@ -71,7 +71,7 @@ main {
 
 section {
   margin-bottom: 2em;
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
 }
 
@@ -81,7 +81,7 @@ section h2 {
 
 ul li {
   margin-bottom: 1em;
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   align-items: center;
 }
@@ -175,10 +175,15 @@ HEAD cursos-lista {
   }
 }
 
-body {
-  max-width: 37.5rem;
+#carouselDiv{
   margin: 0 auto;
-  padding: 0 1.25rem;
+  max-width: 20.5rem;
+}
+
+body {
+  /* max-width: 37.5rem; */
+  margin: 0 auto;
+  /* padding: 0 1.25rem; */
   font-family: "Lato", sans-serif;
 }
 
@@ -403,4 +408,8 @@ label {
 #imageList{
   width: 200px;
   height: 100px;
+}
+
+#secundario{
+  display: none;
 }

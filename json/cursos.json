@@ -4,27 +4,169 @@
         "name": "Curso de Dibujo tecnico 1",
         "image": "img/dibujo-tecnico.jpg",
         "description": "Introduccion a dibujo tecnico",
-        "views": 3
+        "instructor": "Juan Perez",
+        "duracion": "6 semanas",
+        "views": 3,
+        "modulos" : [
+            {
+                "titulo" : "Introduccion",
+                "contenido" : [
+                    "Introduccion al curso",
+                    "Objetivos del curso",
+                    "Lo que aprenderas del curso"
+                ]
+            },
+            {
+                "titulo" : "Tematica 1",
+                "contenido" : [
+                    "Introduccion a la tematica 1",
+                    "Introduccion a la tematica 1",
+                    "Introduccion a la tematica 1"
+                ]
+            },
+            {
+                "titulo" : "Tematica 2",
+                "contenido" : [
+                    "Curso de Dibujo tecnico 2",
+                    "Dibujo avanzado 2",
+                    "Introduccion a la tematica 2"
+                ]
+            },
+            {
+                "titulo" : "Proyecto final",
+                "contenido" : [
+                    "Descripcion del Proyecto",
+                    "Descripcion del Proyecto",
+                    "Descripcion del Proyecto"
+                ]
+            }
+        ]
     },
     {
         "id": 2,
         "name": "Fisica",
         "image": "img/fisica.jpg",
         "description": "Introduccion Fisica",
-        "views": 5
+        "instructor": "Soledad Ruiz",
+        "duracion": "10 semanas",
+        "views": 5,
+        "modulos" : [
+            {
+                "titulo" : "Introduccion",
+                "contenido" : [
+                    "Introduccion al curso",
+                    "Objetivos del curso",
+                    "Lo que aprenderas del curso"
+                ]
+            },
+            {
+                "titulo" : "Tematica 1",
+                "contenido" : [
+                    "Introduccion a la tematica 1",
+                    "Introduccion a la tematica 1",
+                    "Introduccion a la tematica 1"
+                ]
+            },
+            {
+                "titulo" : "Tematica 2",
+                "contenido" : [
+                    "Introduccion a la tematica 2",
+                    "Introduccion a la tematica 2",
+                    "Introduccion a la tematica 2"
+                ]
+            },
+            {
+                "titulo" : "Proyecto final",
+                "contenido" : [
+                    "Descripcion del Proyecto",
+                    "Descripcion del Proyecto",
+                    "Descripcion del Proyecto"
+                ]
+            }
+        ]
     },
     {
         "id": 3,
         "name": "Matematica I",
         "image": "img/matematica.jpg",
         "description": "Introduccion Matematica",
-        "views": 10
+        "instructor": "Pedro Rodriguez",
+        "duracion": "4 semanas",
+        "views": 10,
+        "modulos" : [
+            {
+                "titulo" : "Introduccion a matematica",
+                "contenido" : [
+                    "Introduccion a Matematica",
+                    "Objetivos del curso"
+                ]
+            },
+            {
+                "titulo" : "Conceptos basicos",
+                "contenido" : [
+                    "Introduccion a la tematica 1",
+                    "Introduccion a la tematica 2",
+                    "Introduccion a la tematica 3",
+                    "Revision final"
+                ]
+            },
+            {
+                "titulo" : "Tematica 2",
+                "contenido" : [
+                    "Introduccion a la tematica 2",
+                    "Introduccion a la tematica 2",
+                    "Introduccion a la tematica 2"
+                ]
+            },
+            {
+                "titulo" : "Tematica 3",
+                "contenido" : [
+                    "Introduccion a la tematica 3",
+                    "Introduccion a la tematica 3",
+                    "Introduccion a la tematica 3"
+                ]
+            },
+            {
+                "titulo" : "Proyecto final",
+                "contenido" : [
+                    "Descripcion del Proyecto"
+                ]
+            }
+        ]
     },
     {
         "id": 4,
         "name": "Quimica",
         "image": "img/quimica.jpg",
         "description": "Introduccion Quimica",
-        "views": 3
+        "instructor": "Lidia Bosco",
+        "duracion": "5 semanas",
+        "views": 3,
+        "modulos" : [
+            {
+                "titulo" : "Introduccion",
+                "contenido" : [
+                    "Introduccion al curso",
+                    "Objetivos del curso",
+                    "Lo que aprenderas del curso"
+                ]
+            },
+            {
+                "titulo" : "Tematica 1",
+                "contenido" : [
+                    "Introduccion a la Quimica 1",
+                    "Introduccion a la Quimica 1",
+                    "Introduccion a la Quimica 1"
+                ]
+            },
+            {
+                "titulo" : "Proyecto final",
+                "contenido" : [
+                    "Descripcion del Proyecto",
+                    "Descripcion del Proyecto",
+                    "Descripcion del Proyecto"
+                ]
+            }
+        ]
     }
 ]

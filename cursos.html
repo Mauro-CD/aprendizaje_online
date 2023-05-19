@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/principal.css">
     <link rel="icon" href="favicon/boock.ico">
     <script src="js/menu.js" type="module"></script>
+    <script src="js/cursos.js" type="module"></script>
     <title>Cursos</title>
 </head>
 
@@ -20,59 +21,24 @@
     </header>
 
     <main>
-        <section>
-            <h2>Curriculum del curso</h2>
-            <ul>
-                <li>
-                    <h3>Modulo 1: Introduccion</h3>
-                    <ul>
-                        <li><a href="cursos.html">Leccion 1: Introduccion al curso</a></li>
-                        <li><a href="cursos.html">Leccion 2: Objetivos del curso</a></li>
-                        <li><a href="cursos.html">Leccion 3: Lo que aprenderas del curso</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Modulo 2: Tematica 1</h3>
-                    <ul>
-                        <li><a href="cursos.html">Leccion 1: Introduccion a la tematica 1</a></li>
-                        <li><a href="cursos.html">Leccion 2: Conceptos de la tematica 1</a></li>
-                        <li><a href="cursos.html">Leccion 3: Ejemplos de la tematica 1</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Modulo 3: Tematica 2</h3>
-                    <ul>
-                        <li><a href="cursos.html">Leccion 1: Introduccion a la tematica 2</a></li>
-                        <li><a href="cursos.html">Leccion 2: Conceptos de la tematica 2</a></li>
-                        <li><a href="cursos.html">Leccion 3: Ejemplos de la tematica 2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Modulo 4: Proyecto final</h3>
-                    <ul>
-                        <li><a href="cursos.html">Leccion 1: Descripcion del Proyecto</a></li>
-                        <li><a href="cursos.html">Lesson 2: Pautas para el Proyecto</a></li>
-                        <li><a href="cursos.html">Lesson 3: Entrega del Proyecto</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-         
-        <section>
-            <h2>Detalles del curso</h2>
-            <ul>
-                <li><strong>Instructor:</strong> Juan Perez</li>
-                <li><strong>Duracion:</strong> 8 semanas</li>
-            </ul>
-            <form action="registro.html" method="get" name="Inscribirme"></form>
-            <button name="Inscribirme">Inscribirme en el curso</button>
-        </section>
+        <div id="principal">
+            <section>
+                <h2>Cursos destacados</h2>
+                <ul id="prueba">
+                    <cursos-lista id="cursos-lista"></cursos-lista>
+                </ul>
+            </section>
+        </div>
+
+        <div id="secundario">
+            <cursos-selecionado id="cursos-selecionado"></cursos-selecionado>
+          </div>
     </main>
 
     <footer>
         <!-- <p>&copy; 2023 Plataforma de aprendizaje en linea. Todos derechos reservados.</p> -->
     </footer>
-
+    <script src="js/funciones.js"></script>
 </body>
 
 </html>

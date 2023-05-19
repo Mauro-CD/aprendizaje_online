@@ -1,0 +1,37 @@
+.date {
+    text-align: right;
+}
+
+.title {
+ padding: 10px;   
+}
+
+.coment {
+    text-align: center;
+}
+
+.comentI{
+    background: #aab7c3;
+    padding: 20px;
+}
+
+.comentP{
+    background: #cfdbe6;
+    padding: 20px;
+}
+
+textarea{
+    width: 100%;
+    background: #f6f7f8;
+    resize: none;
+    padding: 10px;
+    height: 100px;
+}
+
+.user {
+    position: absolute;
+}
+
+.foro {
+    padding-bottom: 20px;
+}

@@ -11,7 +11,30 @@ fetch('./json/cursos.json', {
    .then(response => loadCourse(response))
    
 
+function ordenarAsc(p_array_json, p_key) {
+    p_array_json.sort(function (a, b) {
+        return a[p_key] > b[p_key];
+    });
+    
+}
+function sortJSON(data, key, orden) {
+    return data.sort(function (a, b) {
+        var x = a[key],
+        y = b[key];
+
+        if (orden === 'asc') {
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        }
+
+        if (orden === 'desc') {
+            return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+        }
+    });
+}
+
 function loadCourse(cursos) {
+    cursos=sortJSON(cursos, 'name', 'asc');
+    console.log(cursos);
     for (let i = 0; i < cursos.length; i++) {
         let visitas = cursos[i].views
         if (visitas > 2) {

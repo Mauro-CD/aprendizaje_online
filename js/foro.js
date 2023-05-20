@@ -1,5 +1,7 @@
 let foro = document.getElementById('foro');
-const month = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+// const month = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+const month = ["01","02","03","04","05","06","07","08","09","10","11","12"];
+
 fetch('https://jsonplaceholder.typicode.com/comments', {
     method: 'GET',
     headers: {
@@ -23,7 +25,8 @@ function loadComments(comments) {
         numberOfMlSeconds = newDateObj.getTime();
         addMlSeconds = Math.floor(Math.random() * 600000 + 600000*2*i );
         newDateObj = new Date(numberOfMlSeconds - addMlSeconds);
-        let date_final = newDateObj.getDate() + " " + month[newDateObj.getMonth()] + " de " + newDateObj.getFullYear() + " " + newDateObj.toTimeString().substr(0,8);
+        // let date_final = newDateObj.getDate() + " " + month[newDateObj.getMonth()] + " de " + newDateObj.getFullYear() + " " + newDateObj.toTimeString().substr(0,5);
+        let date_final = newDateObj.getDate() + "/" + month[newDateObj.getMonth()] + "/" + newDateObj.getFullYear() + " " + newDateObj.toTimeString().substr(0,5);
         let header = `<div class="${parImpar.toString().includes("0") ? "comentP" : "comentI" }">`;
         let dataInitial = `<div><p class="user">Usuario: ${comments[i].email.split("@",1)[0]}</p><p class="date" >${date_final}</p></div>`;
         let title = `<div class="title"><p>Titulo: ${comments[i].name}</p></div>`;

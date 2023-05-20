@@ -64,7 +64,7 @@ h2 {
 /* estilo seccion principal */
 main {
   -ms-flex-align: center;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 1em;
 }
@@ -406,10 +406,24 @@ label {
   }
  
 #imageList{
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
+  cursor: pointer;
 }
 
 #secundario{
   display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+
+.title-course{
+  max-width: 250px;
+  text-align: center;
 }

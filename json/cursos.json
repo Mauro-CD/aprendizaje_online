@@ -482,7 +482,7 @@
     {
         "id": 13,
         "name": "Alimentación saludable",
-        "image": "img/Alimentación-saludable.jpg",
+        "image": "img/Alimentacion-saludable.jpg",
         "description": "Curso de Alimentación saludable",
         "instructor": "Camila Bertucci",
         "duracion": "2 semanas",
@@ -638,7 +638,7 @@
             {
                 "titulo" : "Proyecto final",
                 "contenido" : [
-                    "Proyecto final Cloud Computing"
+                    "Proyecto final Mecanica Automotriz"
                 ]
             }
         ]
@@ -685,7 +685,99 @@
             {
                 "titulo" : "Proyecto final",
                 "contenido" : [
-                    "Proyecto final Cloud Computing"
+                    "Proyecto final emprendimiento"
+                ]
+            }
+        ]
+    },    
+    {
+        "id": 19,
+        "name": "Fotografia",
+        "image": "img/fotografia.jpg",
+        "description": "Buenas practicas en Fotografia",
+        "instructor": "Lorena Rios",
+        "duracion": "5 semanas",
+        "views": 4,
+        "modulos" : [
+            {
+                "titulo" : "Introduccion",
+                "contenido" : [
+                    "Introduccion al curso",
+                    "Objetivos del curso",
+                    "Lo que aprenderas del curso"
+                ]
+            },
+            {
+                "titulo" : "Tematica 1",
+                "contenido" : [
+                    "Fotografia  1",
+                    "Fotografia  II"          
+                ]
+            },
+            {
+                "titulo" : "Tematica 2",
+                "contenido" : [
+                    "Fotografia avanzada I",
+                    "Fotografia avanzada II",
+                    "Fotografia avanzada III"           
+                ]
+            },
+            {
+                "titulo" : "Tematica 3",
+                "contenido" : [
+                    "Fotografia Avanzado"           
+                ]
+            },
+            {
+                "titulo" : "Proyecto final",
+                "contenido" : [
+                    "Fotografia"
+                ]
+            }
+        ]
+    },    
+    {
+        "id": 19,
+        "name": "Diseño 3D",
+        "image": "img/3d.jpg",
+        "description": "Diseños 3D para expertos",
+        "instructor": "Camilo Sanchez",
+        "duracion": "5 semanas",
+        "views": 5,
+        "modulos" : [
+            {
+                "titulo" : "Introduccion",
+                "contenido" : [
+                    "Introduccion al curso",
+                    "Objetivos del curso",
+                    "Lo que aprenderas del curso"
+                ]
+            },
+            {
+                "titulo" : "Tematica 1",
+                "contenido" : [
+                    "Diseño i",
+                    "Diseño  II"          
+                ]
+            },
+            {
+                "titulo" : "Tematica 2",
+                "contenido" : [
+                    "Diseño avanzada I",
+                    "Diseño avanzada II",
+                    "Diseño avanzada III"           
+                ]
+            },
+            {
+                "titulo" : "Tematica 3",
+                "contenido" : [
+                    "Diseño"           
+                ]
+            },
+            {
+                "titulo" : "Proyecto final",
+                "contenido" : [
+                    "Diseño"
                 ]
             }
         ]

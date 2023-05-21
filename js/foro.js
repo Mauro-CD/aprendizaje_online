@@ -28,8 +28,8 @@ function loadComments(comments) {
         // let date_final = newDateObj.getDate() + " " + month[newDateObj.getMonth()] + " de " + newDateObj.getFullYear() + " " + newDateObj.toTimeString().substr(0,5);
         let date_final = newDateObj.getDate() + "/" + month[newDateObj.getMonth()] + "/" + newDateObj.getFullYear() + " " + newDateObj.toTimeString().substr(0,5);
         let header = `<div class="${parImpar.toString().includes("0") ? "comentP" : "comentI" }">`;
-        let dataInitial = `<div><p class="user">Usuario: ${comments[i].email.split("@",1)[0]}</p><p class="date" >${date_final}</p></div>`;
-        let title = `<div class="title"><p>Titulo: ${comments[i].name}</p></div>`;
+        let dataInitial = `<div><p class="user"><strong>Usuario:</strong> ${comments[i].email.split("@",1)[0]}</p><p class="date" >${date_final}</p></div>`;
+        let title = `<div class="title"><p><strong>Titulo:</strong> <em>${comments[i].name}</em></p></div>`;
         let comment = `<div class="Comont"> <textarea disabled >${comments[i].body}</textarea></div>`;
         foro.innerHTML += `${ header + dataInitial + title + comment }</div>`;
         i++

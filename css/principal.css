@@ -23,7 +23,7 @@ ul {
 
 /* estilo header */
 header {
-  background-color: #0077c0;
+  background-color: #006fb3;
   padding: 1em;
 }
 
@@ -80,7 +80,7 @@ section h2 {
 }
 
 ul li {
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
   /* display: flex; */
   flex-direction: row;
   align-items: center;
@@ -100,7 +100,7 @@ ul li h3 {
 
 /* estilo footer */
 footer {
-  background-color: #333;
+  background-color: #00395b;
   color: #fff;
   padding: 1em;
   text-align: center;
@@ -397,7 +397,7 @@ label {
 	  font-size: 4.2rem;
   }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   nav {
     display: block;
   }
@@ -409,14 +409,86 @@ label {
     align-items: center;
     display: grid
   }
+} */
+.iconMenuGrid{
+  width: 25px;
+  height: 25px;
+  float: left;
+  display: none;
 }
+.Burger{
+  display: none;
+}
+#menuC{
+  display: none;
+}
+
+.iconMenu{
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
 
 @media screen and (max-width: 1000px) {
   h1 {
-      font-size: 3rem;
+    font-size: 2rem;
+    padding-left: 25px;
   }
-}
-/* @media screen and (max-width: 800px) {
+  #menu-ao{
+    position: fixed;
+    background: #15618f;
+    top: 0;
+    left: 0;
+    /* padding-top: 10PX;
+    padding-left: 10px; */
+    padding: 10px;
+    z-index: 1;
+  }
+  .grid-menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    justify-items: left;
+    align-items: center;
+    display: grid;
+    line-height: 25px;
+    margin-bottom: 0px;
+  }
+  .iconMenuGrid{
+    display: block;
+  }
+  .menuList{
+    padding-left: 10px;
+    margin-bottom: 0px;
+  }
+  .menuBoock{
+    display: none;
+  }
+  .Burger{
+    display: block;
+  } 
+  #menuC{
+    display: block;
+  }
+  #menuG{
+    display: none;
+    left: 0px;
+  }
+  nav ul{
+    display: block;
+  }
+  .iconMenu{
+    width: 20px;
+    height: 20px;
+  }
+  nav ul li a img{
+    border: none;
+  }
+  nav ul li:hover {
+    background: #00385b;
+  }
+}/* @media screen and (max-width: 800px) {
   h1 {
       font-size: 2.2rem;
   }
@@ -451,6 +523,7 @@ label {
 .title-course{
   max-width: 250px;
   text-align: center;
+  padding-top: 40px;
 }
 
 /* .grid-menu{
@@ -464,3 +537,4 @@ label {
   color: #f1f1f1;
   font-style: italic;
 }
+

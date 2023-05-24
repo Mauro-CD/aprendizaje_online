@@ -34,7 +34,6 @@ function sortJSON(data, key, orden) {
 
 function loadCourse(cursos) {
     cursos=sortJSON(cursos, 'name', 'asc');
-    console.log(cursos);
     for (let i = 0; i < cursos.length; i++) {
         let visitas = cursos[i].views
         if (visitas > 2) {

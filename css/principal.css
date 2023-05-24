@@ -371,16 +371,64 @@ label {
 /*Titulo neon*/
 .neonText {
   color: #fff;
+  animation: changeTitle 5s infinite;
   text-shadow:
-      0 0 7px #fff,
+      /* 0 0 7px #fff,
       0 0 10px #fff,
       0 0 21px #fff,
       0 0 42px #0fa,
       0 0 82px #0fa,
       0 0 92px #0fa,
       0 0 102px #0fa,
-      0 0 151px #0fa;
+      0 0 151px #0fa; */
+      0 0 7px #fff,
+      0 0 10px #fff, 
+      0 0 21px #fff, 
+      0 0 42px #0f8cd8, 
+      0 0 82px #0f8cd8, 
+      0 0 92px #0f8cd8, 
+      0 0 102px #0f8cd8, 
+      0 0 151px #0f8cd8;
 }
+H1 {
+ 
+}
+
+ @keyframes changeTitle {
+  0% {   
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff, 
+    0 0 21px #fff, 
+    0 0 42px #0f8cd8, 
+    0 0 82px #0f8cd8, 
+    0 0 92px #0f8cd8, 
+    0 0 102px #0f8cd8, 
+    0 0 151px #0f8cd8; 
+  }
+  50% { 
+    text-shadow:
+    0 0 7px #0f8cd8,
+    0 0 10px #0f8cd8, 
+    0 0 21px #0f8cd8, 
+    0 0 42px #0f8cd8, 
+    0 0 82px #0f8cd8, 
+    0 0 92px #0f8cd8, 
+    0 0 102px #0f8cd8, 
+    0 0 151px #0f8cd8; 
+  }
+  100% {
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff, 
+    0 0 21px #fff, 
+    0 0 42px #0f8cd8, 
+    0 0 82px #0f8cd8, 
+    0 0 92px #0f8cd8, 
+    0 0 102px #0f8cd8, 
+    0 0 151px #0f8cd8;
+   }
+} 
 
 #imagecarousel{ 
   width: 100%;
@@ -506,6 +554,23 @@ label {
   width: 250px;
   height: 150px;
   cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+}
+
+#imageList:hover{
+  width: 230px;
+  height: 135px;
+
+}
+
+.transition {
+  -webkit-transform: scale(1.8); 
+  -moz-transform: scale(1.8);
+  -o-transform: scale(1.8);
+  transform: scale(1.8);
 }
 
 #secundario{
@@ -537,4 +602,3 @@ label {
   color: #f1f1f1;
   font-style: italic;
 }
-

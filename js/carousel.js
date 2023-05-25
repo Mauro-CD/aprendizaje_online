@@ -55,12 +55,13 @@ function loadCarousel(cursos) {
         top = cursos.lengt
     } 
     for (let i = 0; i < top; i++) {
+        let nombre = `<p class="nameCourse">${cursos[i].name}</p>`;
         let li = `<li id="carousel__slide${i}" tabindex="0" class="carousel__slide">`;
         let image = `<img id=imagecarousel src="${cursos[i].image}">`;
         let ni = verificaAnterior(i,cursos.length-1);
         let nf = verificaSiguiente(i,cursos.length-1);
         let div = `<div class="carousel__snapper"><a href="#carousel__slide${ni}" class="carousel__prev">Anterior</a><a href="#carousel__slide${nf}" class="carousel__next">Siguiente</a></div>`;
-        ol1 = ol1 + `${ li + image + div }</li>`;
+        ol1 = ol1 + `${ li + nombre + image + div }</li>`;
         ol2 = ol2 + `<li class="carousel__navigation-item"><a href="#carousel__slide${i}" class="carousel__navigation-button">Ir a diapositiva ${i}</a></li>`
     };
     ol1 = ol1 + `</ol>`

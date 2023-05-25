@@ -240,11 +240,11 @@ li {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-color: #f99;
+  /* background-color: #f99; */
 }
 
 .carousel__slide:nth-child(even) {
-  background-color: #99f;
+  /* background-color: #99f; */
 }
 
 .carousel__slide:before {
@@ -601,4 +601,12 @@ H1 {
 .menuSuperior {
   color: #f1f1f1;
   font-style: italic;
+}
+
+.nameCourse{
+  position: absolute;
+  color: white;
+  text-align: left;
+  background: #005f9a;
+  top: 0px;
 }

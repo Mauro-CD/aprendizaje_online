@@ -2,58 +2,58 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/principal.css">
-    <link rel="icon" href="favicon/boock.ico">
-    <title>Aprendizaje</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/principal.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="icon" href="favicon/boock.ico">
+  <title>Aprendizaje</title>
 </head>
 
-<body >
-    <header>
-        <menu-ao id="menu-ao"></menu-ao>
-        <h1 class="neonText">Pagina de aprendizaje en linea</h1>
-        <p class="menuSuperior">Inscribete en diferentes cursos desde la comodidad de tu casa.</p>
-        <!-- <label for="Buscar" >Buscar:</label>
-        <input type="text" id="buscar" name="buscar" placeholder="buscar cursos..." >
-        <button  onclick="search()">Buscar </button> -->
-    </header>
+<body>
+  <header>
+    <menu-ao id="menu-ao"></menu-ao>
+    <h1 class="neonText">Pagina de aprendizaje en linea</h1>
+    <p class="menuSuperior">Inscribete en diferentes cursos desde la comodidad de tu casa.</p>
+  </header>
 
-    <main>
-      <div id="principal"> 
-        <h2>Cursos y Novedades</h2>
-        <div id="carouselDiv">
-          <cursos-carousel id="cursos-carousel"></cursos-carousel>
-        </div>
-       
-        <!-- <section>
-            <h2>Cursos destacados</h2>
-            <ul id="prueba">
-                <cursos-lista id="cursos-lista"></cursos-lista>
-            </ul>
-        </section> -->
-        
-        <nav width="100%" height="100%" src="pages/cursos.html" scrolling="no" frameborder="no" ></nav>
-        <section>
+  <main>
+    <div id="principal">
+      <h2>Cursos y Novedades</h2>
+      <div id="carouselDiv">
+        <cursos-carousel id="cursos-carousel"></cursos-carousel>
+      </div>
+
+      <nav width="100%" height="100%" src="pages/cursos.html" scrolling="no" frameborder="no"></nav>
+      <!-- <section>
             <h2>Categorias</h2>
             <ul>
                 <li><a href="cursos.html">Negocios</a></li>
                 <li><a href="cursos.html">Tecnologia</a></li>
                 <li><a href="cursos.html">Arte</a></li>
                 <li><a href="cursos.html">Musica</a></li>
-            </ul>
-        </section>
-      </div>
-        <div id="secundario">
-          <cursos-selecionado id="cursos-selecionado"></cursos-selecionado>
+            </ul> 
+        </section>-->
+
+      <div id="openModal" class="modalbg">
+        <div class="dialog">
+          <a href="#close" title="Close" class="close">X</a>
+          <popup id="popup"></popup>
         </div>
-    </main>
-    <footer>
-    </footer>
-    <script src="js/menu.js"></script>
-    <script src="js/funciones.js"></script>
-    <script src="js/carousel.js"></script>
+      </div>
+    </div>
+
+
+    <div id="secundario">
+      <cursos-selecionado id="cursos-selecionado"></cursos-selecionado>
+    </div>
+  </main>
+  <footer>
+  </footer>
+  <script src="js/menu.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 
 </html>

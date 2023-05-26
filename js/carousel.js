@@ -56,7 +56,7 @@ function loadCarousel(cursos) {
     } 
     for (let i = 0; i < top; i++) {
         let nombre = `<p class="nameCourse">${cursos[i].name}</p>`;
-        let li = `<li id="carousel__slide${i}" tabindex="0" class="carousel__slide">`;
+        let li = `<li onclick="GetCourse('${cursos[i].name}','${cursos[i].id}')" id="carousel__slide${i}" tabindex="0" class="carousel__slide">`;
         let image = `<img id=imagecarousel src="${cursos[i].image}">`;
         let ni = verificaAnterior(i,cursos.length-1);
         let nf = verificaSiguiente(i,cursos.length-1);

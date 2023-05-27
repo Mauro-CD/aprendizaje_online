@@ -13,18 +13,20 @@ body {
 }
 
 a {
-  color: #0077c0;
+  color: #fdfdfd;
   text-decoration: none;
 }
 
 ul {
   list-style: none;
+  
 }
 
 /* estilo header */
 header {
   background-color: #006fb3;
   padding: 1em;
+  text-align: center;
 }
 
 nav {
@@ -35,12 +37,14 @@ nav {
 
 nav ul {
   display: flex;
+  
 }
 
 nav li {
   /* margin-left: 1em; */
   display: block;
   padding: 10px;
+  
 }
 
 nav a {
@@ -84,6 +88,7 @@ ul li {
   /* display: flex; */
   flex-direction: row;
   align-items: center;
+  
 }
 
 ul li img {
@@ -92,13 +97,33 @@ ul li img {
   border-radius: 5px;
   display: flex;
   flex-direction: row;
+  
 }
 
 ul li h3 {
   margin-bottom: 0.5em;
+  
 }
 
 /* estilo footer */
+.CursosLista{
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f1;
+  color: white;
+}
+.CursosLista > li {
+  background-color: DodgerBlue;
+  color: white;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 25px;
+}
+
+
+
 footer {
   background-color: #00395b;
   color: #fff;
@@ -127,6 +152,10 @@ HEAD cursos-lista {
   display: flex;
   align-items: center;
 }
+.menuSuperior{font-family: 'Roboto', sans-serif;;
+  
+}
+
 
 /*carouel*/
 
@@ -389,9 +418,6 @@ label {
       0 0 92px #0f8cd8, 
       0 0 102px #0f8cd8, 
       0 0 151px #0f8cd8;
-}
-H1 {
- 
 }
 
  @keyframes changeTitle {

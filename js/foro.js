@@ -21,11 +21,9 @@ function loadComments(comments) {
     let top = 100
     while (i < comments.length && i <top ) { 
         parImpar=(i % 2);
-        console.log(parImpar);
         numberOfMlSeconds = newDateObj.getTime();
         addMlSeconds = Math.floor(Math.random() * 600000 + 600000*2*i );
         newDateObj = new Date(numberOfMlSeconds - addMlSeconds);
-        // let date_final = newDateObj.getDate() + " " + month[newDateObj.getMonth()] + " de " + newDateObj.getFullYear() + " " + newDateObj.toTimeString().substr(0,5);
         let date_final = newDateObj.getDate() + "/" + month[newDateObj.getMonth()] + "/" + newDateObj.getFullYear() + " " + newDateObj.toTimeString().substr(0,5);
         let header = `<div class="${parImpar.toString().includes("0") ? "comentP" : "comentI" }">`;
         let dataInitial = `<div><p class="user"><strong>Usuario:</strong> ${comments[i].email.split("@",1)[0]}</p><p class="date" >${date_final}</p></div>`;

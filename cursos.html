@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/popup.css">
     <link rel="icon" href="favicon/boock.ico">
     <script src="js/cursos.js" type="module"></script>
     <title>Cursos</title>
@@ -29,6 +30,12 @@
                     <cursos-lista id="cursos-lista" class="grid-container"></cursos-lista>
                 </ul>
             </section>
+            <div id="openModal" class="modalbg">
+                <div class="dialog">
+                  <a href="#close" title="Close" class="close">X</a>
+                  <popup id="popup"></popup>
+                </div>
+              </div>
         </div>
 
         <div id="secundario">

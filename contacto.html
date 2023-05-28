@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/principal.css">
     <link rel="icon" href="favicon/boock.ico">
+    <script src="js/contacto.js"></script>
     <script src="js/menu.js" type="module"></script>
     <title>Contactanos</title>
-    
+
 </head>
+
 <body>
     <header>
         <menu-ao id="menu-ao"></menu-ao>
         <h1>Contactanos</h1>
     </header>
-    
+
     <main>
-        <form action="submit-form.php" method="POST">
+        <form action="#" name="contacto">
             <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su nro de celular" required>
 
             <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" placeholder="..." required></textarea>
+            <div>
+                <input type="button" onclick="valida()" value="Enviar">
+            </div>
 
-            <button type="submit">Enviar</button>
         </form>
     </main>
 
@@ -34,4 +42,5 @@
         <!-- <p>&copy; 2023 Plataforma de aprendizaje en linea. Todos derechos reservados.</p> -->
     </footer>
 </body>
+
 </html>

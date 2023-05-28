@@ -21,55 +21,57 @@
     </header>
 
     <main>
-        <form action="#" id="registro">
+        <form action="" name="formu">
             <div>
-                <label for="nombreDeUsuario">Nombre:</label>
+                <label for="nombre">Nombre:</label>
                 <i class=""></i>
-                <input type="text" id="name" name="name" placeholder="Nombre" required/>
+                <input type="text" name="nombre" placeholder="Nombre">
                 <i class="fas fa-exclamation-circle failure-icon"></i>
                 <i class="far fa-check-circle success-icon"></i>
-                <div class="error"></div>
+
             </div>
             <div>
-                <label for="nombreDeUsuario">Apellido:</label>
+                <label for="lastname">Apellido:</label>
                 <i class=""></i>
-                <input type="text" id="lastname" name="lastname" placeholder="Apellido" required/>
+                <input type="text" name="lastname" placeholder="Apellido">
                 <i class="fas fa-exclamation-circle failure-icon"></i>
                 <i class="far fa-check-circle success-icon"></i>
-                <div class="error"></div>
+
             </div>
             <div>
                 <label for="correoElectronico">Correo Electrónico</label>
                 <i class="far fa-envelope"></i>
-                <input type="email" id="email" name="email" placeholder="abc@gmail.com" required/>
+                <input type="email" name="correoElectronico" placeholder="abc@gmail.com">
                 <i class="fas fa-exclamation-circle failure-icon"></i>
                 <i class="far fa-check-circle success-icon"></i>
                 <div class="error"></div>
+
             </div>
 
             <div>
-                <label for="password">Contraseña</label>
+                <label for="pass">Contraseña</label>
                 <i class="fas fa-lock"></i>
-                <input type="password" id="password" name="password" placeholder="Ingresar contraseña" required/>
+                <input type="password" name="pass" placeholder="Ingresar contraseña">
                 <i class="fas fa-exclamation-circle failure-icon"></i>
                 <i class="far fa-check-circle success-icon"></i>
                 <div class="error"></div>
             </div>
             <div>
-                <label for="password">Confirmar Contraseña</label>
+                <label for="pass2">Confirmar Contraseña</label>
                 <i class="fas fa-lock"></i>
-                <input type="password" id="password2" name="password2" placeholder="Ingresar contraseña" required/>
+                <input type="password" name="pass2" placeholder="Reingresar contraseña">
                 <i class="fas fa-exclamation-circle failure-icon"></i>
                 <i class="far fa-check-circle success-icon"></i>
                 <div class="error"></div>
             </div>
-            <button id="btn" type="submit" value="registro" onclick="registro()">Registar</button>
+            <input type="button" onclick="validar()" value="Registrar">
+            <!--<button id="btn" type="button" value="registro" onclick="validar()">Registrar</button>-->
         </form>
 
 
     </main>
 
-    <footer>
+    <footer>s
         <!-- <p>&copy; 2023 Plataforma de aprendizaje en linea. Todos derechos reservados.</p> -->
     </footer>
 

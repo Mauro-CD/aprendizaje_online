@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #fdfdfd;
+  color: #0077c0;
   text-decoration: none;
 }
 
@@ -276,7 +276,7 @@ li {
 .carousel__slide:before {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50%; 
   transform: translate3d(-50%, -40%, 70px);
   color: #fff;
   font-size: 2em;
@@ -297,6 +297,7 @@ li {
     animation-timing-function: ease;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    cursor: pointer;
   }
 
   .carousel__slide:last-child .carousel__snapper {
@@ -318,7 +319,7 @@ li {
 .carousel__navigation {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -15px;
   left: 0;
   text-align: center;
 }
@@ -660,7 +661,10 @@ label {
   color: white;
   text-align: left;
   background: #005f9a;
-  top: 0px;
+  width: 100%;
+  bottom: 0px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .button{

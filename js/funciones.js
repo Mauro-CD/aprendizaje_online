@@ -62,9 +62,9 @@ function load(curso,id) {
 function inscripcion(value) {
    if (localStorage.getItem("User") !== null){
       // alert("Se inscribe al curso");
-      login(true,false);
+      login(true,value);
    } else {
-      login(false,false);
+      login(false,value);
    }
    document.getElementById("secundario").style.display = "none";
    document.getElementById("principal").style.display = "block";
@@ -79,29 +79,31 @@ function menuLogin(){
    };
 }
 
-function login(login,menu) {
-   window.location.href = "#openModal";
-   popup.innerHTML =`
-   <h2>${login ? "Validar clave" : "Iniciar sesión"}</h2>
-   <div>
-      <label for="usuario">Usuario:</label>
-      <i class=""></i>
-      ${login 
-         ? "<a class='formInput hold' type='text' id='user' name='user'>"+localStorage.getItem("User")+"</a>" 
-         : "<input class='formInput' type='text' id='user' name='user' placeholder='Nombre' minlength='1' required/>"
-      }
-      
-      <div class="error"></div>
-   </div>
-   <div>
-      <label for="password">Contraseña</label>
-      <i class="fas fa-lock"></i>
-      <input class="formInput" type="password" id="password" name="password" placeholder="Ingresar contraseña" minlength="1" required/>
-      <div class="error"></div>
-   </div>
-   <p id="invalidUser"></p>
-   <button class="button" id="btn" value="loginValidate" onclick="loginValidate(${menu ? true : false})">Ingresar</button>
-   `;
+function login(login,inscribe) {
+   if (inscribe) {
+      window.location.href = "#openModal";
+      popup.innerHTML =`
+      <h2>${login ? "Validar clave" : "Iniciar sesión"}</h2>
+      <div>
+         <label for="usuario">Usuario:</label>
+         <i class=""></i>
+         ${login 
+            ? "<a class='formInput hold' type='text' id='user' name='user'>"+localStorage.getItem("User")+"</a>" 
+            : "<input class='formInput' type='text' id='user' name='user' placeholder='Nombre' minlength='1' required/>"
+         }
+         
+         <div class="error"></div>
+      </div>
+      <div>
+         <label for="password">Contraseña</label>
+         <input class="formInput" type="password" id="password" name="password" placeholder="Ingresar contraseña" minlength="1" required/>
+         <div class="error"></div>
+      </div>
+      <p id="invalidUser"></p>
+      <button class="button" id="btn" value="loginValidate" onclick="loginValidate(${menu ? true : false})">Ingresar</button>
+      `;
+   }
+  
 }
 
 function loadCourse(cursos) {

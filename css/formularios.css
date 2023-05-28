@@ -187,3 +187,36 @@
   }
   
 
+  #invalidPhone{
+    display: none;
+    font-size: 12px;
+    line-height: 0.5;
+    color: white;
+    position: absolute;
+    background: #ff708d;
+    padding: 6px;
+  }
+
+  #invalidPhone::before{
+    content: 'Numero de teléfono invalido';
+  }
+
+  #message{
+    width: 100%;
+    resize: none;
+    height: 150px
+  }
+
+  #invalidMessage{
+    display: none;
+    font-size: 12px;
+    line-height: 0.5;
+    color: white;
+    position: absolute;
+    background: #ff708d;
+    padding: 6px;
+  }
+
+  #invalidMessage::before{
+    content: 'Ingrese un mensaje';
+  }

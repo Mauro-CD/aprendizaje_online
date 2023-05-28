@@ -1,0 +1,114 @@
+[33mcommit a4d4ea82430658d96e49772ebd28e2c63522c164[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Sat May 20 01:01:19 2023 -0300
+
+    modificacion CSS
+
+[33mcommit 7bed838c7eb929e8eeeea3ffde3a1224e70fcc62[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Fri May 19 23:31:26 2023 -0300
+
+    add cursos
+
+[33mcommit 964d1ae8cf4933556791ac116dc51506183525a6[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Fri May 19 23:24:00 2023 -0300
+
+    add cursos
+
+[33mcommit c4df17d8ccf7a535d82b14a6e5680e22415688f1[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Fri May 19 23:23:14 2023 -0300
+
+    Generacion del sitio Cruso con grid
+
+[33mcommit 75b5cbcb1d80ca334948b3531f06fb9a11935ae9[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Fri May 19 20:32:47 2023 -0300
+
+    Separacion de cursos
+
+[33mcommit 5c214e9c0c87f062383d093f0f702700bc0ef574[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Fri May 19 19:11:24 2023 -0300
+
+    Se genera sitio del Foro, los datos son tomados de una API externa, la fecha se inveanta a falta de informacion en la API
+
+[33mcommit d3de08cccc7982745b16b89c894b438ccba8085e[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Fri May 12 20:13:00 2023 -0300
+
+    generacion de hipervinculos en los sitios de cada curso
+
+[33mcommit 0ef95cd71645a89a46fa075880f5e64d74ebb72f[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Thu May 11 21:55:44 2023 -0300
+
+    automatizacion de caousel por js
+
+[33mcommit 76106b29c485e48d3e5b42c2ee9050cdc26b1b89[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Tue May 9 22:38:46 2023 -0300
+
+    add favicon
+
+[33mcommit b9319714d8b02cf625f33f9d66e37c4872b8e10b[m
+Author: Andrea batalla <oktubre610@gmail.com>
+Date:   Thu May 4 00:34:09 2023 -0300
+
+    imagenes carousel, neon titulo y cambio de fonts
+
+[33mcommit a4e16295b8809d4b6a4ce37f0644e04840c84708[m
+Merge: 47e42b0 a9b7dc0
+Author: Andrea batalla <oktubre610@gmail.com>
+Date:   Wed May 3 18:56:30 2023 -0300
+
+    css carousel
+
+[33mcommit 47e42b0b01f93a008a69de779e6d6714b4b20bd3[m
+Author: Andrea batalla <oktubre610@gmail.com>
+Date:   Tue May 2 23:55:18 2023 -0300
+
+    carousel slideshow en html y css
+
+[33mcommit a9b7dc0b6cc45fa4a45d9eafc015c697e1cbd691[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Mon May 1 22:23:47 2023 -0300
+
+    se agrego funcion de busqueda en index.htm y se modifico el tipo de formulario
+
+[33mcommit e810dd8996f6c04e5413d98e7106d27044821bf1[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Mon May 1 14:52:26 2023 -0300
+
+    generacion de json
+
+[33mcommit 49481a92f813f70b5c6bffa9fbfbac05f1dcca0f[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Mon May 1 12:32:41 2023 -0300
+
+    Automatizacion del menu
+
+[33mcommit 9a763e75a472071efdb413f4538c07213c09f8ab[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Thu Apr 27 00:23:15 2023 -0300
+
+    Separacion de datos de curso
+
+[33mcommit 88de8c365fee75d915fee3558cee197b6779b541[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Wed Apr 26 21:31:05 2023 -0300
+
+    Se modifica ubicaciones de archivos y forma de listar los cursos principales
+
+[33mcommit d2c2cfb0520741b58e26f2185891b8d32ecb929c[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Fri Apr 21 22:12:10 2023 -0300
+
+    se generan carpetas, se renombran algunos archivos y se modifica el estilo del h2
+
+[33mcommit bff072995d04276e36c3f9711525589cd45d1ab9[m
+Author: Mauro Caceres Damore <mauro.ocd@gmail.com>
+Date:   Fri Apr 21 20:11:37 2023 -0300
+
+    Se sube sitio enviado por Jose Pablo

@@ -1,7 +1,17 @@
 let cursoSelecionado = document.getElementById('cursos-selecionado');
+let popup = document.getElementById('popup');
+
+
+popup.innerHTML =`
+<h2>${localStorage.getItem("CourceName")}</h2>
+<p>¿Desea ver el curso?</p>
+<button class="button" onclick="clouseCourse('${localStorage.getItem("CourceID")}')">Ver</button>
+<button class="button" onclick="clouseCourse()">Cancelar</button>
+`;
+
+
 
 function getCourse(id) {
-   console.log("cargar")
    document.getElementById("principal").style.display = "none";
    fetch('./json/cursos.json', {
       method: 'GET',
@@ -19,10 +29,8 @@ function load(curso,id) {
    let idNumber = Number(id);
    let exista = false;
    let cursoEncontrado = null;
-   while (i < curso.length && !exista ) { // muestra 0, luego 1, luego 2
-      console.log(i);
+   while (i < curso.length && !exista ) { 
       if (curso[i].id === idNumber) {
-         console.log("existe");
          exista = true;
          cursoEncontrado = curso[i];
       };
@@ -42,18 +50,58 @@ function load(curso,id) {
          cursoHTML = cursoHTML + `</ul></li>`
       }
       cursoHTML = cursoHTML + `</ul></section>`;
-      let pie = `<section><h2>Detalles del curso</h2><ul><li><strong>Instructor:</strong> ${cursoEncontrado.instructor}</li><li><strong>Duracion:</strong> ${cursoEncontrado.duracion}</li></ul><button name="Inscribirme" onclick="inscripcion()">Inscribirme en el curso</button></section>`
+      let pie = `<section><h2>Detalles del curso</h2><ul><li><strong>Instructor:</strong> ${cursoEncontrado.instructor}</li><li><strong>Duracion:</strong> ${cursoEncontrado.duracion}</li></ul><button class="button" name="Inscribirme" onclick="inscripcion(true)">Inscribirme en el curso</button><button class="button bottonCancel" name="cancelar" onclick="inscripcion(false)">Cancelar</button></section>`
       cursoSelecionado.innerHTML = cursoHTML + pie
       document.getElementById("secundario").style.display = "block";
     } else {
+      document.getElementById("principal").style.display = "block";
       alert("No se encontro el curso")
     }
 }
 
-function inscripcion() {
-   alert("Se inscribe al curso");
+function inscripcion(value) {
+   if (localStorage.getItem("User") !== null){
+      // alert("Se inscribe al curso");
+      login(true,false);
+   } else {
+      login(false,false);
+   }
    document.getElementById("secundario").style.display = "none";
    document.getElementById("principal").style.display = "block";
+}
+
+function menuLogin(){
+   if (localStorage.getItem("User") !== null){
+      // alert("Se inscribe al curso");
+      login(true,true);
+   } else {
+      login(false,true);
+   };
+}
+
+function login(login,menu) {
+   window.location.href = "#openModal";
+   popup.innerHTML =`
+   <h2>${login ? "Validar clave" : "Iniciar sesión"}</h2>
+   <div>
+      <label for="usuario">Usuario:</label>
+      <i class=""></i>
+      ${login 
+         ? "<a class='formInput hold' type='text' id='user' name='user'>"+localStorage.getItem("User")+"</a>" 
+         : "<input class='formInput' type='text' id='user' name='user' placeholder='Nombre' minlength='1' required/>"
+      }
+      
+      <div class="error"></div>
+   </div>
+   <div>
+      <label for="password">Contraseña</label>
+      <i class="fas fa-lock"></i>
+      <input class="formInput" type="password" id="password" name="password" placeholder="Ingresar contraseña" minlength="1" required/>
+      <div class="error"></div>
+   </div>
+   <p id="invalidUser"></p>
+   <button class="button" id="btn" value="loginValidate" onclick="loginValidate(${menu ? true : false})">Ingresar</button>
+   `;
 }
 
 function loadCourse(cursos) {
@@ -93,3 +141,58 @@ function search(){
 }	
 
 
+function GetCourse(course,id) {
+   localStorage.setItem("CourceName", course);
+   localStorage.setItem("CourceID", id);
+   window.location.href = "#openModal";
+   popup.innerHTML =`
+   <h2>${course}</h2>
+   <p>¿Desea ver el curso?</p>
+   <button class="button" onclick="clouseCourse('${id}')">Ver</button>
+   <button class="button" onclick="clouseCourse()">Cancelar</button>
+   `;
+}
+
+function clouseCourse(id){
+   // localStorage.removeItem("CourceID");
+   // localStorage.removeItem("CourceName");
+   if (id !== undefined){
+       getCourse(id);
+   }
+   window.location.href = "#couse";
+}
+
+function loginValidate(menu){
+   let id = true;
+   let user;
+   let password = document.getElementById("password").value
+   
+   console.log(user,password);
+   if (localStorage.getItem("User") !== null){
+      user = localStorage.getItem("User");
+   } else {
+      user = document.getElementById("user").value
+   }
+   if (user.length > 0 && password.length > 0){
+      getUser(user,password,menu)
+   } else {
+      window.alert("Se debe ingresar usuario y password")
+      // window.location.href = "#couse";
+   }
+}
+
+function getUser(user,password,menu){
+   if (user === "admin" && password === "admin"){
+      localStorage.setItem("User", user);
+      if (!menu){
+         window.alert("se Inscribió al curso")
+      } else {
+         window.alert("Bienvenido")
+      }
+      window.location.href = "#couse";
+   } else {
+      // window.alert("usuario inexistente")
+      document.getElementById('invalidUser').style.display="block";
+      document.getElementById('invalidUser').style.breakBefore.textContent="block";
+   }
+}

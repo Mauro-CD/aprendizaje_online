@@ -6,7 +6,7 @@
         "description": "Introduccion a dibujo tecnico",
         "instructor": "Juan Perez",
         "duracion": "6 semanas",
-        "views": 3,
+        "views": 6,
         "modulos" : [
             {
                 "titulo" : "Introduccion",
@@ -202,7 +202,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Algoritmos",
         "image": "img/algoritmo.jpg",
         "description": "Introduccion Algoritmos",
@@ -356,7 +356,7 @@
         "description": "Introduccion Seguridad Informatica",
         "instructor": "Marcelo Merlo",
         "duracion": "3 semanas",
-        "views": 3,
+        "views": 2,
         "modulos" : [
             {
                 "titulo" : "Introduccion",
@@ -384,7 +384,7 @@
     {
         "id": 10,
         "name": "Java I",
-        "image": "img/java.jpg",
+        "image": "img/java-curso.jpg",
         "description": "Introduccion Java",
         "instructor": "Pedro Bosco",
         "duracion": "5 semanas",
@@ -420,7 +420,7 @@
         "description": "Introduccion al Negocio",
         "instructor": "Florencia Martin",
         "duracion": "2 semanas",
-        "views": 3,
+        "views": 5,
         "modulos" : [
             {
                 "titulo" : "Introduccion",
@@ -486,7 +486,7 @@
         "description": "Curso de Alimentación saludable",
         "instructor": "Camila Bertucci",
         "duracion": "2 semanas",
-        "views": 3,
+        "views": 6,
         "modulos" : [
             {
                 "titulo" : "Introduccion",
@@ -617,7 +617,7 @@
         "description": "Conceptos Mecanica Automotriz",
         "instructor": "Carlos Rios",
         "duracion": "5 semanas",
-        "views": 4,
+        "views": 2,
         "modulos" : [
             {
                 "titulo" : "Introduccion",
@@ -650,7 +650,7 @@
         "description": "Claves para Emprendimientos",
         "instructor": "Marisa Rios",
         "duracion": "5 semanas",
-        "views": 4,
+        "views": 7,
         "modulos" : [
             {
                 "titulo" : "Introduccion",
@@ -743,7 +743,7 @@
         "description": "Diseños 3D para expertos",
         "instructor": "Camilo Sanchez",
         "duracion": "5 semanas",
-        "views": 5,
+        "views": 3,
         "modulos" : [
             {
                 "titulo" : "Introduccion",

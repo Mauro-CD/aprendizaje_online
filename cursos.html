@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/popup.css">
     <link rel="icon" href="favicon/boock.ico">
-    <script src="js/menu.js" type="module"></script>
     <script src="js/cursos.js" type="module"></script>
     <title>Cursos</title>
 </head>
@@ -17,7 +17,7 @@
     <header>
         <menu-ao id="menu-ao"></menu-ao>
         <h1>Cursos disponibles</h1>
-        <label for="Buscar" >Buscar:</label>
+        <!-- <label for="Buscar" class="menuSuperior" >Buscar:</label> -->
         <input type="text" id="buscar" name="buscar" placeholder="buscar cursos..." >
         <button  onclick="search()">Buscar </button>
     </header>
@@ -30,6 +30,12 @@
                     <cursos-lista id="cursos-lista" class="grid-container"></cursos-lista>
                 </ul>
             </section>
+            <div id="openModal" class="modalbg">
+                <div class="dialog">
+                  <a href="#close" title="Close" class="close">X</a>
+                  <popup id="popup"></popup>
+                </div>
+              </div>
         </div>
 
         <div id="secundario">
@@ -39,6 +45,7 @@
 
     <footer>
     </footer>
+    <script src="js/menu.js"></script>
     <script src="js/funciones.js"></script>
 </body>
 

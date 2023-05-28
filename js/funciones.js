@@ -60,11 +60,48 @@ function load(curso,id) {
 }
 
 function inscripcion(value) {
-   if (value){
-      alert("Se inscribe al curso");
+   if (localStorage.getItem("User") !== null){
+      // alert("Se inscribe al curso");
+      login(true,false);
+   } else {
+      login(false,false);
    }
    document.getElementById("secundario").style.display = "none";
    document.getElementById("principal").style.display = "block";
+}
+
+function menuLogin(){
+   if (localStorage.getItem("User") !== null){
+      // alert("Se inscribe al curso");
+      login(true,true);
+   } else {
+      login(false,true);
+   };
+}
+
+function login(login,menu) {
+   window.location.href = "#openModal";
+   popup.innerHTML =`
+   <h2>${login ? "Validar clave" : "Iniciar sesión"}</h2>
+   <div>
+      <label for="usuario">Usuario:</label>
+      <i class=""></i>
+      ${login 
+         ? "<a class='formInput hold' type='text' id='user' name='user'>"+localStorage.getItem("User")+"</a>" 
+         : "<input class='formInput' type='text' id='user' name='user' placeholder='Nombre' minlength='1' required/>"
+      }
+      
+      <div class="error"></div>
+   </div>
+   <div>
+      <label for="password">Contraseña</label>
+      <i class="fas fa-lock"></i>
+      <input class="formInput" type="password" id="password" name="password" placeholder="Ingresar contraseña" minlength="1" required/>
+      <div class="error"></div>
+   </div>
+   <p id="invalidUser"></p>
+   <button class="button" id="btn" value="loginValidate" onclick="loginValidate(${menu ? true : false})">Ingresar</button>
+   `;
 }
 
 function loadCourse(cursos) {
@@ -117,10 +154,45 @@ function GetCourse(course,id) {
 }
 
 function clouseCourse(id){
-   localStorage.removeItem("CourceID");
-   localStorage.removeItem("CourceName");
+   // localStorage.removeItem("CourceID");
+   // localStorage.removeItem("CourceName");
    if (id !== undefined){
        getCourse(id);
    }
    window.location.href = "#couse";
+}
+
+function loginValidate(menu){
+   let id = true;
+   let user;
+   let password = document.getElementById("password").value
+   
+   console.log(user,password);
+   if (localStorage.getItem("User") !== null){
+      user = localStorage.getItem("User");
+   } else {
+      user = document.getElementById("user").value
+   }
+   if (user.length > 0 && password.length > 0){
+      getUser(user,password,menu)
+   } else {
+      window.alert("Se debe ingresar usuario y password")
+      // window.location.href = "#couse";
+   }
+}
+
+function getUser(user,password,menu){
+   if (user === "admin" && password === "admin"){
+      localStorage.setItem("User", user);
+      if (!menu){
+         window.alert("se Inscribió al curso")
+      } else {
+         window.alert("Bienvenido")
+      }
+      window.location.href = "#couse";
+   } else {
+      // window.alert("usuario inexistente")
+      document.getElementById('invalidUser').style.display="block";
+      document.getElementById('invalidUser').style.breakBefore.textContent="block";
+   }
 }

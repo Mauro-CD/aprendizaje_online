@@ -10,9 +10,6 @@
 	 -webkit-transition: all 2s ease-out;
 	 -o-transition: all 2s ease-out;
 	 transition: all 2s ease-out;
-	 -webkit-transition-delay: .2s;
-	 -moz-transition-delay: .2s;
-	 -o-transition-delay: .2s;
 	 -transition-delay: .2s;
 	 display: block;
 	 pointer-events: none;
@@ -61,9 +58,6 @@
 	 -webkit-transition: all .8s ease-out;
 	 -o-transition: all .8s ease-out;
 	 transition: all .8s ease-out;
-	 -webkit-transition-delay: .4s;
-	 -moz-transition-delay: .4s;
-	 -o-transition-delay: .4s;
 	 -transition-delay: .4s;
 }
  .close {
@@ -87,9 +81,6 @@
 	 -webkit-transition: all .5s ease-out;
 	 -o-transition: all .5s ease-out;
 	 transition: all .5s ease-out;
-	 -webkit-transition-delay: .2s;
-	 -moz-transition-delay: .2s;
-	 -o-transition-delay: .2s;
 	 -transition-delay: .2s;
 }
  .close .ie7 {

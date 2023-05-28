@@ -1,3 +1,4 @@
+@import "./formularios.css";
 /* reset estilo */
 * {
   margin: 0;
@@ -243,10 +244,6 @@ li {
   /* background-color: #f99; */
 }
 
-.carousel__slide:nth-child(even) {
-  /* background-color: #99f; */
-}
-
 .carousel__slide:before {
   position: absolute;
   top: 50%;
@@ -390,9 +387,6 @@ label {
       0 0 102px #0f8cd8, 
       0 0 151px #0f8cd8;
 }
-H1 {
- 
-}
 
  @keyframes changeTitle {
   0% {   
@@ -470,6 +464,10 @@ H1 {
 #menuC{
   display: none;
 }
+#login{
+  float: right;
+  filter: brightness(0) invert(1);
+}
 
 .iconMenu{
   width: 40px;
@@ -477,6 +475,31 @@ H1 {
   float: left;
 }
 
+.iconLogin{
+  width: 40px;
+  height: 40px;
+  float: right;
+  right: 16px;
+  position: absolute;
+  filter: brightness(0) invert(1);
+}
+
+.login{
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+#loginOpen{
+  position: fixed;
+  background: #15618f;
+  top: 0;
+  right: 0;
+  /* padding-top: 10PX;
+  padding-left: 10px; */
+  padding: 10px;
+  z-index: 1;
+}
 
 @media screen and (max-width: 1000px) {
   h1 {
@@ -554,10 +577,6 @@ H1 {
   width: 250px;
   height: 150px;
   cursor: pointer;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
 }
 
 #imageList:hover{
@@ -613,11 +632,8 @@ H1 {
 
 .button{
   font-family: inherit;
-  -moz-appearance: none;
   border: none;
   cursor: pointer;
-  -moz-user-select: none;
-  -ms-user-select: none;
   padding: 0 16px;
   background-color: #0e7cab;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);

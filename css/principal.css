@@ -207,7 +207,7 @@ HEAD cursos-lista {
 
 #carouselDiv{
   margin: 0 auto;
-  max-width: 20.5rem;
+  max-width: 400px;
 }
 
 body {
@@ -691,3 +691,12 @@ label {
   }
 }
 
+.video{
+  display: flex;
+  justify-content: center;
+}
+
+iframe{
+  max-width: 420px;
+  height: 240px;
+}

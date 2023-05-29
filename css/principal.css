@@ -1,3 +1,4 @@
+@import "./formularios.css";
 /* reset estilo */
 * {
   margin: 0;
@@ -13,7 +14,7 @@ body {
 }
 
 a {
-  color: #fdfdfd;
+  color: #0077c0;
   text-decoration: none;
 }
 
@@ -206,7 +207,7 @@ HEAD cursos-lista {
 
 #carouselDiv{
   margin: 0 auto;
-  max-width: 20.5rem;
+  max-width: 400px;
 }
 
 body {
@@ -275,7 +276,7 @@ li {
 .carousel__slide:before {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50%; 
   transform: translate3d(-50%, -40%, 70px);
   color: #fff;
   font-size: 2em;
@@ -296,6 +297,7 @@ li {
     animation-timing-function: ease;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    cursor: pointer;
   }
 
   .carousel__slide:last-child .carousel__snapper {
@@ -317,7 +319,7 @@ li {
 .carousel__navigation {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -15px;
   left: 0;
   text-align: center;
 }
@@ -492,6 +494,10 @@ label {
 #menuC{
   display: none;
 }
+#login{
+  float: right;
+  filter: brightness(0) invert(1);
+}
 
 .iconMenu{
   width: 40px;
@@ -499,6 +505,31 @@ label {
   float: left;
 }
 
+.iconLogin{
+  width: 40px;
+  height: 40px;
+  float: right;
+  right: 16px;
+  position: absolute;
+  filter: brightness(0) invert(1);
+}
+
+.login{
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+#loginOpen{
+  position: fixed;
+  background: #15618f;
+  top: 0;
+  right: 0;
+  /* padding-top: 10PX;
+  padding-left: 10px; */
+  padding: 10px;
+  z-index: 1;
+}
 
 @media screen and (max-width: 1000px) {
   h1 {
@@ -630,7 +661,10 @@ label {
   color: white;
   text-align: left;
   background: #005f9a;
-  top: 0px;
+  width: 100%;
+  bottom: 0px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .button{
@@ -657,3 +691,12 @@ label {
   }
 }
 
+.video{
+  display: flex;
+  justify-content: center;
+}
+
+iframe{
+  max-width: 420px;
+  height: 240px;
+}

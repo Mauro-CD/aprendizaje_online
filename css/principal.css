@@ -7,6 +7,13 @@
 }
 
 /* estilo global */
+#Titulo{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif}
+
 body {
   font-family: Arial, sans-serif;
   color: #333;

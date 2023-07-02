@@ -10,7 +10,10 @@ fetch('https://jsonplaceholder.typicode.com/comments', {
 })
    .then(response => response.json())
    .then(response => loadComments(response))
-   
+   .catch(err => {
+    console.error(err);
+    this.error=true
+    })
 
 function loadComments(comments) {
     let dateObj = new Date();

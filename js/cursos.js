@@ -1,7 +1,7 @@
 let listado = document.getElementById('cursos-lista');
 
 //fetch('http://127.0.0.1:5500/cursos.json', {
-fetch('./json/cursos.json', {
+fetch('https://maurocd.pythonanywhere.com/courses', {
     method: 'GET',
     headers: {
         'Accept': 'application/json',
@@ -9,6 +9,10 @@ fetch('./json/cursos.json', {
 })
    .then(response => response.json())
    .then(response => loadCourse(response))
+   .catch(err => {
+    console.error(err);
+    this.error=true
+    })
    
 
 function ordenarAsc(p_array_json, p_key) {
@@ -35,15 +39,12 @@ function sortJSON(data, key, orden) {
 function loadCourse(cursos) {
     cursos=sortJSON(cursos, 'name', 'asc');
     for (let i = 0; i < cursos.length; i++) {
-        let visitas = cursos[i].views
-        if (visitas > 2) {
-            let a = `<a>`
-            let name = `<h3 id=nameCurso${i} class="title-course">${cursos[i].name}</h3>`;
-            let image = `<p id=image type="button" ><img id=imageList onclick="GetCourse('${cursos[i].name}','${cursos[i].id}')" src="${cursos[i].image}"></p>`;
-            let description = `<p id=description>${cursos[i].description}</p>`;
-            //let boton = `<p type="button" onclick="cambiar('${cursos[i].Descripcion}')"><img src="${cursos[i].Imagen}"></p>`
-            let af = `</a>`;
-            listado.innerHTML += `<li >${ a +  name + image + description + af}</li>`;
-        } 
+        let a = `<a>`
+        let name = `<h3 id=nameCurso${i} class="title-course">${cursos[i].name}</h3>`;
+        let image = `<p id=image type="button" ><img id=imageList onclick="GetCourse('${cursos[i].name}','${cursos[i].id}')" src="${cursos[i].image}"></p>`;
+        let description = `<p id=description>${cursos[i].description}</p>`;
+        //let boton = `<p type="button" onclick="cambiar('${cursos[i].Descripcion}')"><img src="${cursos[i].Imagen}"></p>`
+        let af = `</a>`;
+        listado.innerHTML += `<li >${ a +  name + image + description + af}</li>`;
     };
 }

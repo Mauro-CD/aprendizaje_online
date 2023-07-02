@@ -1,6 +1,6 @@
 let carousel = document.getElementById('cursos-carousel');
 
-fetch('./json/cursos.json', {
+fetch('https://maurocd.pythonanywhere.com/courses', {
     method: 'GET',
     headers: {
         'Accept': 'application/json',
@@ -8,6 +8,10 @@ fetch('./json/cursos.json', {
 })
    .then(response => response.json())
    .then(response => loadCarousel(response))
+   .catch(err => {
+    console.error(err);
+    this.error=true
+    })
    
 
 
@@ -51,8 +55,8 @@ function loadCarousel(cursos) {
     let top =5;
     let ol1 = `<ol class="carousel__viewport">`;
     let ol2 = `<aside class="carousel__navigation"><ol class="carousel__navigation-list">`
-    if (cursos.lengt < top) {
-        top = cursos.lengt
+    if (cursos.length < top) {
+        top = cursos.length
     } 
     for (let i = 0; i < top; i++) {
         let nombre = `<p class="nameCourse">${cursos[i].name}</p>`;

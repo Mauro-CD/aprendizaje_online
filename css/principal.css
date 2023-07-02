@@ -54,7 +54,7 @@ nav a {
 
 h1 {
   text-align: center;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   color: #fff;
   margin-bottom: 5px;

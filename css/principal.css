@@ -621,9 +621,11 @@ label {
 }
 
 #imageList:hover{
-  width: 230px;
-  height: 135px;
-
+  transform: scale(1.2); 
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  
 }
 
 .transition {
@@ -707,3 +709,4 @@ iframe{
   max-width: 420px;
   height: 240px;
 }
+#cardbox{box-shadow: 10px 10px;}

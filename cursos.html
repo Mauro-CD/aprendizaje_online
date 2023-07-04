@@ -16,27 +16,28 @@
 
     <header>
         <menu-ao id="menu-ao"></menu-ao>
-        <h1>Cursos disponibles</h1>
+        <h1 class="neonText">Cursos disponibles</h1>
         <!-- <label for="Buscar" class="menuSuperior" >Buscar:</label> -->
         <input type="text" id="buscar" name="buscar" placeholder="buscar cursos..." >
         <button  onclick="search()">Buscar </button>
     </header>
 
     <main>
-        <div id="principal">
+        <div  id="principal">
             <section>
-                <h2>Listado de Cursos</h2>
-               <div id="cardbox"> <ul id="prueba">
+                <h2 id="cardbox">Listado de Cursos</h2>
+               <div class="cardbox">
+                <ul  id="prueba">
                     
                     <cursos-lista id="cursos-lista" class="grid-container"></cursos-lista>
-                </ul></div></div>
+                </ul></div>
             </section>
             <div id="openModal" class="modalbg">
                 <div class="dialog">
                   <a href="#close" title="Close" class="close">X</a>
                   <popup id="popup"></popup>
                 </div>
-              </div>
+              </div></div>
         </div>
 
         <div id="secundario">

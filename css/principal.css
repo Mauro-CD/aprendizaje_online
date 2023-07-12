@@ -709,13 +709,3 @@ iframe{
   max-width: 420px;
   height: 240px;
 }
-#cardbox{ font-size: 35px;
-  color: white;
-  align-self: center;
-  width: auto;
-  height: 100px;
-  padding-top: 30px;
-  background-color: rgb(42, 68, 214);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  }
